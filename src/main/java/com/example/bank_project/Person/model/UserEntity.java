@@ -22,6 +22,6 @@ public class UserEntity {
     @Column(name = "number_phone")
     private String number;
     private Long balance;
-    private Long wastes;
+    private Long wastes = 0L;
 }
 

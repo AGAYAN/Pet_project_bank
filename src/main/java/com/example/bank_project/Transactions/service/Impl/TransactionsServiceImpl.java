@@ -61,20 +61,4 @@ public class TransactionsServiceImpl implements TransactionsService {
                 .collect(Collectors.toList());
     }
 
-    @Override
-    public TransactionsEntity discountOnTheAmount(String number) {
-        UserEntity user = userRepository.findByNumber(number)
-                .orElseThrow(() -> new RuntimeException("Нету такого user"));
-
-        TransactionsEntity transactions = transactionsRepository.findById(user.getId())
-                .orElseThrow(() -> new RuntimeException("У пользвателя нету транзакции"));
-
-        Long UserBalanse = user.getBalance();
-        // Реализация кешбек 1.25;
-
-
-
-        return transactions;
-    }
-
 }
