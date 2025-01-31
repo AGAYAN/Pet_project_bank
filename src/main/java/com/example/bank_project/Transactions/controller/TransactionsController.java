@@ -1,10 +1,8 @@
 package com.example.bank_project.Transactions.controller;
 
 
-import com.example.bank_project.Person.model.UserEntity;
 import com.example.bank_project.Transactions.dto.TransactionsDto;
 import com.example.bank_project.Transactions.dto.TransactionsInfoDTO;
-import com.example.bank_project.Transactions.model.TransactionsEntity;
 import com.example.bank_project.Transactions.service.TransactionsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

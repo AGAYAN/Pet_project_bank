@@ -15,7 +15,7 @@ public class ShoppingSeviceImpl implements ShoppingService {
     @Override
     public UserEntity buyThing(ShoppingDto shoppingDto) {
         UserEntity userEntity = userRepository.findByNumber(shoppingDto.getNumber())
-                .orElseThrow(() -> new RuntimeException("Нету такого user"));
+                .orElseThrow(() -> new RuntimeException("Нету такого user с таким номером"));
 
         if (userEntity.getBalance() < shoppingDto.getPrice()) {
             throw new RuntimeException("У вас не достаточно средств");

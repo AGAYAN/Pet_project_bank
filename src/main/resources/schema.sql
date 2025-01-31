@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS person
     name varchar(355) NOT NULL,
     email varchar(355) NOT NULL UNIQUE,
     number_phone varchar(50) NOT NULL UNIQUE,
-    balance BIGINT
+    balance BIGINT,
+    wastes BIGINT,
+    cashback BIGINT
     );
 
 CREATE TABLE IF NOT EXISTS transactions
@@ -16,4 +18,4 @@ CREATE TABLE IF NOT EXISTS transactions
 
     FOREIGN KEY (person_from) references person(id) on delete cascade,
     FOREIGN KEY (person_to) references person(id) on delete cascade
-);
+    );

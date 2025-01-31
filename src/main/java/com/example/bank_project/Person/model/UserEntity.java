@@ -23,5 +23,6 @@ public class UserEntity {
     private String number;
     private Long balance;
     private Long wastes = 0L;
+    private Double cashback = 0.0;
 }
 

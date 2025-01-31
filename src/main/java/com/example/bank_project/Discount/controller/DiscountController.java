@@ -2,7 +2,6 @@ package com.example.bank_project.Discount.controller;
 
 import com.example.bank_project.Discount.service.DiscountService;
 import com.example.bank_project.Person.model.UserEntity;
-import com.example.bank_project.Transactions.model.TransactionsEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
